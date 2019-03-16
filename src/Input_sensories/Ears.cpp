@@ -1,25 +1,26 @@
-#include "Eyes.h"
-#include "src/Occipital_lobe/Primary_area_OCC/Area_V1.h"
+#include "Ears.h"
+#include "src/Temporal_lobe/Primary_area_TEM/Area_A1.h"
 
 // Define constructor
-Eyes::Eyes():passed_data(0)
+Ears::Ears():passed_auditory_data(0)
 {
 }
 
 // Define destructor
-Eyes::~Eyes()
+Ears::~Ears()
 {
 }
 
-int Eyes::bring_passed_data(Eyes &eyes)
+int Ears::return_passed_auditory_data(Ears &ear)
 {
-  int passed_data=eyes.passed_data;
-  return passed_data;
+  int passed_auditory_data=ear.passed_auditory_data;
+  return passed_auditory_data;
 }
 
-void Eyes::send_data_to_V1(int &passed_data,Area_V1 &area_v1)
+void Ears::send_auditory_data_to_A1(
+  int &passed_auditory_data,
+  Area_A1 &area_a1)
 {
-  
-  area_v1.store_data_into_memory_V1(passed_data,area_v1);
+  area_a1.store_data_into_memory_AA(passed_auditory_data,area_a1);
 }
 

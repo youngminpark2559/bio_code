@@ -1,25 +1,27 @@
 #ifndef EYES_H
 #define EYES_H
 
-#include "src/Occipital_lobe/Primary_area_OCC/Area_V1.h"
+#include "src/Temporal_lobe/Primary_area_TEM/Area_A1.h"
 
 // Define class
-class Eyes
+class Ears
 {
 private:
   // Member variables
-  int passed_data;
+  int passed_auditory_data;
 public:
   // Constructor
-  Eyes();
+  Ears();
 
   // Destructor
-  ~Eyes();
+  ~Ears();
 
   // Member functions
-  int bring_passed_data(Eyes &eyes);
+  int return_passed_auditory_data(Ears &ears);
 
-  void send_data_to_V1(int &passed_data,Area_V1 &area_v1);
+  void send_auditory_data_to_A1(
+    int &passed_auditory_data,
+    Area_A1 &area_a1);
 
 };
 
