@@ -4,8 +4,9 @@
 // -I"/mnt/1T-5e7/mycodehtml/bio_health/bio_code" \
 // -o Test_Area_V1 \
 // /mnt/1T-5e7/mycodehtml/bio_health/bio_code/src/Input_sensories/Eyes.cpp \
-// /mnt/1T-5e7/mycodehtml/bio_health/bio_code/src/Primary_area/Area_V1.cpp \
-// /mnt/1T-5e7/mycodehtml/bio_health/bio_code/src/Association_area/Area_VA.cpp \
+// /mnt/1T-5e7/mycodehtml/bio_health/bio_code/src/Occipital_lobe/Primary_area_OCC/Area_V1.cpp \
+// /mnt/1T-5e7/mycodehtml/bio_health/bio_code/src/Occipital_lobe/Association_area_OCC/Area_VA.cpp \
+// /mnt/1T-5e7/mycodehtml/bio_health/bio_code/src/Prefrontal_cortex/Prefrontal_cortex.cpp \
 // /mnt/1T-5e7/mycodehtml/bio_health/bio_code/src/Unit_test/Test_Area_V1.cpp \
 // -lgtest -lgtest_main -pthread && \
 // rm e.l && ./Test_Area_V1 2>&1 | tee -a e.l && code e.l
@@ -15,7 +16,7 @@
 #include <gtest/gtest.h>
 
 #include "src/Input_sensories/Eyes.h"
-#include "src/Primary_area/Area_V1.h"
+#include "src/Occipital_lobe/Primary_area_OCC/Area_V1.h"
 
 using namespace std;
 

@@ -1,7 +1,7 @@
 #ifndef AREA_V1_H
 #define AREA_V1_H
 
-#include "src/Association_area/Area_VA.h"
+#include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
 
 class Area_V1
 {

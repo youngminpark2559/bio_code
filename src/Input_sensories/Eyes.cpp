@@ -1,5 +1,5 @@
 #include "Eyes.h"
-#include "src/Primary_area/Area_V1.h"
+#include "src/Occipital_lobe/Primary_area_OCC/Area_V1.h"
 
 // Define constructor
 Eyes::Eyes():passed_data(0)

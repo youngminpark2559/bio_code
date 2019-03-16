@@ -1,7 +1,7 @@
 #ifndef EYES_H
 #define EYES_H
 
-#include "src/Primary_area/Area_V1.h"
+#include "src/Occipital_lobe/Primary_area_OCC/Area_V1.h"
 
 // Define class
 class Eyes

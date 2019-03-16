@@ -2,7 +2,7 @@
 #ifndef PREFRONTAL_CORTEX
 #define PREFRONTAL_CORTEX
 
-// #include "src/Association_area/Area_VA.h"
+// #include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
 
 class Prefrontal_cortex
 {

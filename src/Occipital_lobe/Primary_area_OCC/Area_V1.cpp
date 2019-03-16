@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#include "src/Primary_area/Area_V1.h"
+#include "src/Occipital_lobe/Primary_area_OCC/Area_V1.h"
 
 // ================================================================================
 Area_V1::Area_V1():memory_V1(1)

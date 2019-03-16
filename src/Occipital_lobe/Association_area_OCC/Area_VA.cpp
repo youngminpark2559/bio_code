@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 
-#include "src/Association_area/Area_VA.h"
+#include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
 #include "src/Prefrontal_cortex/Prefrontal_cortex.h"
 
 using namespace std;
