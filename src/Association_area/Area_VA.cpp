@@ -3,25 +3,26 @@
 
 using namespace std;
 
-#include "src/Primary_area/Area_V1.h"
+#include "src/Association_area/Area_VA.h"
 
 // ================================================================================
-Area_V1::Area_V1():memory_V1(1)
+Area_VA::Area_VA():memory_VA(1)
 {
-  std::cout<<"Constructor Area_V1::Area_V1 is called"<<std::endl;
+  std::cout<<"Constructor Area_VA::Area_VA is called"<<std::endl;
 }
 
-Area_V1::~Area_V1()
+Area_VA::~Area_VA()
 {
-  std::cout<<"Destructor Area_V1::~Area_V1 is called"<<std::endl;
+  std::cout<<"Destructor Area_VA::~Area_VA is called"<<std::endl;
 }
 
-void Area_V1::store_data_into_memory_V1(int &data,Area_V1 &area_v1)
+void Area_VA::store_data_into_memory_VA(Area_VA &Area_VA,int &data)
 {
-  area_v1.memory_V1=data;
+  Area_VA.memory_VA=data;
 }
 
-int Area_V1::bring_memory_in_V1()
+int Area_VA::bring_memory_from_VA()
 {
-  return memory_V1;
+  return memory_VA;
 }
+

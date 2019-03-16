@@ -1,8 +1,8 @@
-// cd /mnt/1T-5e7/mycodehtml/bio_health/my_test_biomechanisms && \
+// cd /mnt/1T-5e7/mycodehtml/bio_health/bio_code && \
 // g++ \
 // -std=c++11 \
 // -o main \
-// /mnt/1T-5e7/mycodehtml/bio_health/my_test_biomechanisms/main.cpp && \
+// /mnt/1T-5e7/mycodehtml/bio_health/bio_code/main.cpp && \
 // rm e.l && ./main 2>&1 | tee -a e.l && code e.l
 
 #include <iostream>
