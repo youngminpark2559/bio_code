@@ -1,9 +1,10 @@
 #include <iostream>
 #include <cstring>
 
-using namespace std;
-
 #include "src/Association_area/Area_VA.h"
+#include "src/Prefrontal_cortex/Prefrontal_cortex.h"
+
+using namespace std;
 
 // ================================================================================
 Area_VA::Area_VA():memory_VA(1)
@@ -26,3 +27,10 @@ int Area_VA::bring_memory_from_VA()
   return memory_VA;
 }
 
+void Area_VA::send_data_from_VA_to_VAPFC(
+  Prefrontal_cortex &prefrontal_cortex,
+  int &memory_VA)
+{
+  prefrontal_cortex.store_data_from_VA_to_VAFPC(
+    prefrontal_cortex,memory_VA);
+}

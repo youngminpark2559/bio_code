@@ -1,6 +1,3 @@
-
-
-
 #ifndef AREA_V1_H
 #define AREA_V1_H
 
