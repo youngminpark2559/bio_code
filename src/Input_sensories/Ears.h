@@ -17,7 +17,7 @@ public:
   ~Ears();
 
   // Member functions
-  int return_passed_auditory_data(Ears &ears);
+  int return_passed_auditory_data();
 
   void send_auditory_data_to_A1(
     int &passed_auditory_data,

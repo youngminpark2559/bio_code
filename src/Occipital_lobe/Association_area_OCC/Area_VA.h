@@ -7,17 +7,18 @@
 class Area_VA
 {
 private:
-  int memory_VA;
-
+  int new_visual_memory_VA;
+protected:
+  int existing_visual_memory_VA=10;
 public:
   Area_VA();
   ~Area_VA();
 
-  void store_data_into_memory_VA(Area_VA &Area_VA,int &data);
-  int bring_memory_from_VA();
-  void send_data_from_VA_to_VAPFC(
+  void store_visual_data_into_memory_VA(Area_VA &Area_VA,int &data);
+  int bring_visual_memory_from_VA();
+  void send_visual_data_from_VA_to_VAPFC(
     Prefrontal_cortex &prefrontal_cortex,
-    int &memory_VA);
+    int &new_visual_memory_VA);
 
 };
 #else // Area_VA_H is already defined

@@ -51,7 +51,7 @@ TEST(Send_data_from_V1_to_VA_and_check_it,Subtest_2)
 
   // Act
   area_v1.send_memory_from_V1_to_VA(area_va,memory_v1);
-  auto memory_from_VA=area_va.bring_memory_from_VA();
+  auto memory_from_VA=area_va.bring_visual_memory_from_VA();
   // std::cout<<"memory_from_VA: "<<memory_from_VA<<std::endl;
   // memory_from_VA: 1
 

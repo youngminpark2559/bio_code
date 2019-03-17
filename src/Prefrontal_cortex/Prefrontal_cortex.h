@@ -4,11 +4,14 @@
 
 // #include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
 
-class Prefrontal_cortex
+class Prefrontal_cortex:public Area_VA,public Area_AA
 {
 private:
-  int memory_VAPFC;
-  int memory_AAPFC;
+  int new_memory_VAPFC;
+  int new_memory_AAPFC;
+
+  int existing_memory_VAPFC;
+  int existing_memory_AAPFC;
 
 public:
   // Declare constructor
@@ -17,18 +20,24 @@ public:
   // Declare destructor
   ~Prefrontal_cortex();
 
-  // Member functions
-  void store_data_from_VA_to_VAFPC(
+  // Member functions (visual system)
+  void store_visual_data_from_VA_to_VAFPC(
     Prefrontal_cortex &prefrontal_cortex,
     int &memory_va);
-  int bring_memory_from_VAPFC();
+  int bring_visual_memory_from_VAPFC();
 
-  void store_auditory_data_from_VA_to_AAFPC(
+  // Member functions (auditory system)
+  void store_auditory_data_from_AA_to_AAFPC(
     Prefrontal_cortex &prefrontal_cortex,
-    int &memory_va);
+    int &memory_aa);
   int bring_auditory_memory_from_AAPFC();
+
+  // Member functions (recall existing memories into PFC)
+  int recall_existing_visual_memory_and_save_it_to_PFC();
+  int recall_existing_auditory_memory_and_save_it_to_PFC();
 
 };
 #else // PREFRONTAL_CORTEX is already defined
 // Do something
 #endif
+

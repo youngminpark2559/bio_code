@@ -7,8 +7,9 @@
 class Area_AA
 {
 private:
-  int auditory_memory_AA;
-
+  int new_auditory_memory_AA;
+protected:
+  int existing_auditory_memory_AA=10;
 public:
   Area_AA();
   ~Area_AA();
@@ -25,4 +26,5 @@ public:
 #else // Area_AA_H is already defined
 // Do something
 #endif
+
 

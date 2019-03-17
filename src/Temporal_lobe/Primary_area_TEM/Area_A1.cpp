@@ -33,5 +33,7 @@ void Area_A1::send_auditory_memory_from_A1_to_AA(
   Area_AA &area_aa,
   int &auditory_memory_A1)
 {
-  area_aa.store_data_into_memory_VA(area_aa,memory_a1);
+  area_aa.store_auditory_data_into_auditory_memory_AA(
+    area_aa,
+    auditory_memory_A1);
 }
