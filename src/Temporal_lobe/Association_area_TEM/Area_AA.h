@@ -4,6 +4,16 @@
 
 // #include "src/Prefrontal_cortex/Prefrontal_cortex.h"
 class Prefrontal_cortex;
+
+
+
+/**
+ * @brief Prefrontal_cortex
+ * @details Do the functionalities of prefrontal cortex
+ * @author youngminpark2559@gmail.com
+ * @date 2019_03_17_14_31_37
+ * @version 0.0.1
+ */
 class Area_AA
 {
 private:

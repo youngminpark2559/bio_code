@@ -108,12 +108,69 @@ TEST(Recall_existing_memories_and_save_them_into_PFC,Subtest_2)
   int existing_auditory_memory=prefrontal_cortex.\
     recall_existing_auditory_memory_and_save_it_to_PFC();
 
-  std::cout<<"existing_visual_memory: "<<existing_visual_memory<<std::endl;
-  std::cout<<"existing_auditory_memory: "<<existing_auditory_memory<<std::endl;
+  // std::cout<<"existing_visual_memory: "<<existing_visual_memory<<std::endl;
+  // std::cout<<"existing_auditory_memory: "<<existing_auditory_memory<<std::endl;
+  // existing_visual_memory: 10
+  // existing_auditory_memory: 10
 
   // Assert
-  // int expected=101;
-  // ASSERT_TRUE(expected==new_memory_AAPFC);
+  int expected=10;
+  ASSERT_TRUE(expected==existing_visual_memory);
+  ASSERT_TRUE(expected==existing_auditory_memory);
+}
+
+TEST(Sum_new_memory_in_PFC,Subtest_2)
+{
+  // Arrange
+  Prefrontal_cortex prefrontal_cortex;
+
+  // Act
+  int summed_new_memories_in_PFC=\
+    prefrontal_cortex.sum_new_memories_in_PFC();
+
+  int summed_existing_memories_in_PFC=\
+    prefrontal_cortex.sum_existing_memories_in_PFC();
+
+  // std::cout<<"summed_new_memories_in_PFC: "<<summed_new_memories_in_PFC<<std::endl;
+  // summed_new_memories_in_PFC: 2
+
+  // std::cout<<"summed_existing_memories_in_PFC: "<<summed_existing_memories_in_PFC<<std::endl;
+  // summed_existing_memories_in_PFC: 0
+
+  // Assert
+  ASSERT_TRUE(2==summed_new_memories_in_PFC);
+  ASSERT_TRUE(0==summed_existing_memories_in_PFC);
+}
+
+TEST(Return_after_perception_PFC,Subtest_2)
+{
+  // Arrange
+  Prefrontal_cortex prefrontal_cortex;
+
+  int summed_new_memories_in_PFC=\
+    prefrontal_cortex.sum_new_memories_in_PFC();
+
+  int summed_existing_memories_in_PFC=\
+    prefrontal_cortex.sum_existing_memories_in_PFC();
+
+  prefrontal_cortex.perform_perception();
+  // Perception is being processed
+
+  // Act
+  int return_after_perception_PFC=prefrontal_cortex.return_after_perception_PFC();
+  std::cout<<"return_after_perception_PFC: "<<return_after_perception_PFC<<std::endl;
+  // return_after_perception_PFC: 0
+
+
+  // std::cout<<"summed_new_memories_in_PFC: "<<summed_new_memories_in_PFC<<std::endl;
+  // summed_new_memories_in_PFC: 2
+
+  // std::cout<<"summed_existing_memories_in_PFC: "<<summed_existing_memories_in_PFC<<std::endl;
+  // summed_existing_memories_in_PFC: 0
+
+  // Assert
+  ASSERT_TRUE(2==summed_new_memories_in_PFC);
+  ASSERT_TRUE(0==summed_existing_memories_in_PFC);
 }
 
 int main(int argc,char **argv)

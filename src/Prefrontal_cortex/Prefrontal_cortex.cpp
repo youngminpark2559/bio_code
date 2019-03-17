@@ -4,8 +4,12 @@
 using namespace std;
 
 #include "src/Prefrontal_cortex/Prefrontal_cortex.h"
-// #include "src/Temporal_lobe/Association_area_TEM/Area_AA.h"
-// #include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
+
+// comment
+#include "src/Temporal_lobe/Association_area_TEM/Area_AA.h"
+#include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
+// comment
+
 
 // ================================================================================
 
@@ -53,4 +57,40 @@ int Prefrontal_cortex::recall_existing_visual_memory_and_save_it_to_PFC()
 int Prefrontal_cortex::recall_existing_auditory_memory_and_save_it_to_PFC()
 {
   return existing_memory_AAPFC=existing_auditory_memory_AA;
+}
+
+// Member functions (sum new memories in PFC)
+int Prefrontal_cortex::sum_new_memories_in_PFC()
+{
+  // std::cout<<"new_memory_VAPFC: "<<new_memory_VAPFC<<std::endl;
+  // std::cout<<"new_memory_AAPFC: "<<new_memory_AAPFC<<std::endl;
+  
+  int summed_new_memory_in_PFC=\
+    new_memory_VAPFC+new_memory_AAPFC;
+  return summed_new_memory_in_PFC;
+}
+
+// Member functions (sum existing memories in PFC)
+int Prefrontal_cortex::sum_existing_memories_in_PFC()
+{
+  // std::cout<<"existing_memory_VAPFC: "<<existing_memory_VAPFC<<std::endl;
+  // std::cout<<"existing_memory_AAPFC: "<<existing_memory_AAPFC<<std::endl;
+  int summed_existing_memory_in_PFC=\
+    existing_memory_VAPFC+existing_memory_AAPFC;
+  return summed_existing_memory_in_PFC;
+}
+
+void Prefrontal_cortex::perform_perception()
+{
+  std::cout<<"summed_new_memories_in_PFC: "<<summed_new_memories_in_PFC<<std::endl;
+  std::cout<<"summed_existing_memories_in_PFC: "<<summed_existing_memories_in_PFC<<std::endl;
+  std::cout<<"Perception is being processed"<<std::endl;
+
+  // For the simplicity, suppose "perception" is adding following 2 values
+  after_perception_PFC=summed_new_memories_in_PFC+summed_existing_memories_in_PFC;
+}
+
+int Prefrontal_cortex::return_after_perception_PFC()
+{
+  return after_perception_PFC;
 }

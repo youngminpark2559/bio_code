@@ -3,6 +3,13 @@
 
 #include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
 
+/**
+ * @brief Area_V1
+ * @details Do the functionalities of Area_V1
+ * @author youngminpark2559@gmail.com
+ * @date 2019_03_17_14_31_37
+ * @version 0.0.1
+ */
 class Area_V1
 {
 private:

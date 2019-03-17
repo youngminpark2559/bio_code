@@ -4,6 +4,14 @@
 // #include "src/Prefrontal_cortex/Prefrontal_cortex.h"
 class Prefrontal_cortex;
 
+
+/**
+ * @brief Area_VA
+ * @details Do the functionalities of Area_VA
+ * @author youngminpark2559@gmail.com
+ * @date 2019_03_17_14_31_37
+ * @version 0.0.1
+ */
 class Area_VA
 {
 private:

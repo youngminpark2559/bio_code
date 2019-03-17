@@ -3,7 +3,13 @@
 
 #include "src/Occipital_lobe/Primary_area_OCC/Area_V1.h"
 
-// Define class
+/**
+ * @brief Eyes
+ * @details Do the functionalities of Eyes
+ * @author youngminpark2559@gmail.com
+ * @date 2019_03_17_14_31_37
+ * @version 0.0.1
+ */
 class Eyes
 {
 private:
