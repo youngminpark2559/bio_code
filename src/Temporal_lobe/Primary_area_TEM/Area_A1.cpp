@@ -24,7 +24,7 @@ void Area_A1::store_auditory_data_into_memory_A1(
   area_v1.auditory_memory_A1=auditory_data;
 }
 
-int Area_A1::return_memory_from_V1()
+int Area_A1::return_auditory_memory_from_A1()
 {
   return auditory_memory_A1;
 }

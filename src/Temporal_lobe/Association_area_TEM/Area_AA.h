@@ -1,9 +1,9 @@
 
-#ifndef Area_AA_H
-#define Area_AA_H
+#ifndef AREA_AA_H
+#define AREA_AA_H
 
-#include "src/Prefrontal_cortex/Prefrontal_cortex.h"
-
+// #include "src/Prefrontal_cortex/Prefrontal_cortex.h"
+class Prefrontal_cortex;
 class Area_AA
 {
 private:
@@ -23,8 +23,9 @@ public:
     int &memory_AA);
 
 };
-#else // Area_AA_H is already defined
+#else // AREA_AA_H is already defined
 // Do something
+
 #endif
 
 

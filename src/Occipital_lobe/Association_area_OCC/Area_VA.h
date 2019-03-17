@@ -1,8 +1,8 @@
-
 #ifndef Area_VA_H
 #define Area_VA_H
 
-#include "src/Prefrontal_cortex/Prefrontal_cortex.h"
+// #include "src/Prefrontal_cortex/Prefrontal_cortex.h"
+class Prefrontal_cortex;
 
 class Area_VA
 {

@@ -1,8 +1,8 @@
-
 #ifndef PREFRONTAL_CORTEX
 #define PREFRONTAL_CORTEX
 
-// #include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
+#include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
+#include "src/Temporal_lobe/Association_area_TEM/Area_AA.h"
 
 class Prefrontal_cortex:public Area_VA,public Area_AA
 {

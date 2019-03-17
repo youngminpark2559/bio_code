@@ -28,6 +28,11 @@
 // Preprontal cortex area
 #include "src/Prefrontal_cortex/Prefrontal_cortex.h"
 
+// #include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"  // for Area_VA
+// #include "src/Prefrontal_cortex/Prefrontal_cortex.h"          // for Prefron...
+// #include "src/Temporal_lobe/Association_area_TEM/Area_AA.h"   // for Area_AA
+
+
 using namespace std;
 
 // ================================================================================
@@ -92,26 +97,23 @@ TEST(Send_data_from_AA_to_AAPFC_and_check_memory_AAPFC,Subtest_2)
   ASSERT_TRUE(expected==new_memory_AAPFC);
 }
 
-TEST(Recall_existing_memories,Subtest_2)
+TEST(Recall_existing_memories_and_save_them_into_PFC,Subtest_2)
 {
   // Arrange
-  // c area_va: instance of Area_VA
-  Area_AA area_aa;
-  // c area_va: instance of Prefrontal_cortex
   Prefrontal_cortex prefrontal_cortex;
-  int memory_AA=101;
-  area_aa.send_auditory_data_from_AA_to_AAPFC(
-    prefrontal_cortex,
-    memory_AA);
 
   // Act
-  auto new_memory_AAPFC=prefrontal_cortex.bring_auditory_memory_from_AAPFC();
-  // std::cout<<"new_memory_VAPFC: "<<new_memory_VAPFC<<std::endl;
-  // new_memory_VAPFC: 100
+  int existing_visual_memory=prefrontal_cortex.\
+    recall_existing_visual_memory_and_save_it_to_PFC();
+  int existing_auditory_memory=prefrontal_cortex.\
+    recall_existing_auditory_memory_and_save_it_to_PFC();
+
+  std::cout<<"existing_visual_memory: "<<existing_visual_memory<<std::endl;
+  std::cout<<"existing_auditory_memory: "<<existing_auditory_memory<<std::endl;
 
   // Assert
-  int expected=101;
-  ASSERT_TRUE(expected==new_memory_AAPFC);
+  // int expected=101;
+  // ASSERT_TRUE(expected==new_memory_AAPFC);
 }
 
 int main(int argc,char **argv)

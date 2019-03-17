@@ -4,8 +4,8 @@
 using namespace std;
 
 #include "src/Prefrontal_cortex/Prefrontal_cortex.h"
-#include "src/Temporal_lobe/Association_area_TEM/Area_AA.h"
-#include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
+// #include "src/Temporal_lobe/Association_area_TEM/Area_AA.h"
+// #include "src/Occipital_lobe/Association_area_OCC/Area_VA.h"
 
 // ================================================================================
 
@@ -48,9 +48,9 @@ int Prefrontal_cortex::bring_auditory_memory_from_AAPFC()
 // Member functions (recall existing memories and save them into PFC)
 int Prefrontal_cortex::recall_existing_visual_memory_and_save_it_to_PFC()
 {
-  return existing_visual_memory_VA;
+  return existing_memory_VAPFC=existing_visual_memory_VA;
 }
 int Prefrontal_cortex::recall_existing_auditory_memory_and_save_it_to_PFC()
 {
-  return existing_auditory_memory_AA;
+  return existing_memory_AAPFC=existing_auditory_memory_AA;
 }

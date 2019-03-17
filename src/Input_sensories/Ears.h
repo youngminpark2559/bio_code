@@ -1,5 +1,5 @@
-#ifndef EYES_H
-#define EYES_H
+#ifndef EARS_H
+#define EARS_H
 
 #include "src/Temporal_lobe/Primary_area_TEM/Area_A1.h"
 
