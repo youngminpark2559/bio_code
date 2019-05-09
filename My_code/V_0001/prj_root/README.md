@@ -147,4 +147,4 @@ prob_val_of_BMI_gt_25=nb_gt_25_in_BMI/768
 - P(diabetes|pregnancies): when pregnancies prior is given, probability of diabetes occuring<br/>
 - P(diabetes|BMI): when BMI prior is given, probability of diabetes occuring<br/>
 - ...<br/>
-3. Inspect data in terms of Gaussian mixture model<br/>
+3.. Inspect data in terms of Gaussian mixture model<br/>
