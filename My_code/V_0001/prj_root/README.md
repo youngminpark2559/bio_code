@@ -72,4 +72,13 @@ Outcome                     768 non-null int64
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_20%3A52%3A45.png" alt="drawing" width="1000" height="1000"/><br/>
 ..(1) Meaning: there are nagative and positive relationships between factors<br/>
 ....1) Large variance: Insulin, Glucose<br/>
-....2) Small variance: Outcome, Pregnancies<br/>
+....2) Small variance: Outcome, Pregnancies<br/><br/>
+
+2.. See correlations on features<br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_21%3A27%3A16.png" alt="drawing" width="1000" height="1000"/><br/>
+..(1) Meaning: there are nagative and positive relationships between factors<br/>
+....1) Negative correlation: Insulin-Pregnancies, SkinThickness-Pregnancies, Age-SkinThickness,<br/>
+....2) Positive correlation: Age-Pregnancies, BMI-SkinThickness, Insluin-SkinThickness, Insulin-Glucose<br/>
+
+
+
