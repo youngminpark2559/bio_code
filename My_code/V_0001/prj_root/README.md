@@ -93,9 +93,10 @@ After<br/>
 
 ================================================================================
 #### Visualize train data  
-1.. See the estimated probability distribution density function (PDF) of each feature data using 2 parameters; mean and std<br/>
-<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_20%3A52%3A45.png" alt="drawing" width="1000" height="1000"/><br/>
-..(1) Meaning: there are nagative and positive relationships between factors<br/>
+1.. See the estimated probability distribution density function (PDF) of each feature data using 2 parameters; $\mu$ and $\sigma^2$ <br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_06%3A48%3A15.png" alt="drawing" width="1000" height="1000"/><br/>
+..(1) Goal of this estimation on PDF: to see variance distributions of each feature data<br/>
+..(2) Meaning: there are nagative and positive relationships between factors<br/>
 ....1) Large variance: Insulin, Glucose<br/>
 ....2) Small variance: Outcome, Pregnancies<br/><br/>
 
