@@ -167,12 +167,12 @@ prob_val_of_BMI_gt_25=nb_gt_25_in_BMI/768
 
 ================================================================================
 #### To do
-1.. Plot entire data on the 2D plane to see how each feature gathers<br/>
-2.. See "weight of importance" to the diabetes phenomenon by using conditional probability<br/>
+[V] 1.. Plot entire data on the 2D plane to see how each feature gathers<br/>
+[ ] 2.. See "weight of importance" to the diabetes phenomenon by using conditional probability<br/>
 
 - P(diabetes|age): when age prior is given, probability of diabetes occuring<br/>
 - P(diabetes|pregnancies): when pregnancies prior is given, probability of diabetes occuring<br/>
 - P(diabetes|BMI): when BMI prior is given, probability of diabetes occuring<br/>
 - ...<br/>
 
-3.. Inspect data in terms of Gaussian mixture model<br/>
+[ ] 3.. Inspect data in terms of Gaussian mixture model<br/>
