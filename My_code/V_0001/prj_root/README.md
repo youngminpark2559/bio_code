@@ -111,12 +111,13 @@ After<br/>
 
 4.. See paired scatter plot<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_07%3A25%3A57.png" alt="drawing" width="1000" height="1000"/><br/>
-..(1) Meaning: there are nagative and positive relationships between factors<br/>
-....1) Negative correlation: Insulin-Pregnancies, SkinThickness-Pregnancies, Age-SkinThickness,<br/>
-....2) Positive correlation: Age-Pregnancies, BMI-SkinThickness, Insluin-SkinThickness, Insulin-Glucose<br/>
 
-4.. See paired scatter plot with labels<br/>
+5.. See paired scatter plot which is separated by labels (1 if glucose>120, 0 otherwise)<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_07%3A28%3A16.png" alt="drawing" width="1000" height="1000"/><br/>
+
+6.. See paired scatter plot with "estimated distribution via Kernel Density Estimation" + "separated distribution by labels (1 if glucose>120, 0 otherwise)"<br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_07%3A48%3A47.png" alt="drawing" width="1000" height="1000"/><br/>
+
 ..(1) Meaning<br/>
 ....1) See Glucose-Insulin<br/>
 - Less Glucose results in less Insulin<br/>
