@@ -93,7 +93,7 @@ After<br/>
 
 ================================================================================
 #### Visualize train data  
-1.. See the estimated probability distribution function of each feature data using mean and std<br/>
+1.. See the estimated probability distribution density function (PDF) of each feature data using 2 parameters; mean and std<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_20%3A52%3A45.png" alt="drawing" width="1000" height="1000"/><br/>
 ..(1) Meaning: there are nagative and positive relationships between factors<br/>
 ....1) Large variance: Insulin, Glucose<br/>
