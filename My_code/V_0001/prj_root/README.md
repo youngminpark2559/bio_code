@@ -48,6 +48,25 @@ max    67.100000   2.420000                  81.000000   1.000000
 ```
 
 ================================================================================
+#### Overview of entire dataset<br/>
+```
+Pregnancies                 768 non-null int64
+Glucose                     768 non-null int64
+BloodPressure               768 non-null int64
+SkinThickness               768 non-null int64
+Insulin                     768 non-null int64
+BMI                         768 non-null float64
+DiabetesPedigreeFunction    768 non-null float64
+Age                         768 non-null int64
+Outcome                     768 non-null int64
+```
+
+1.. Meaning<br/>
+..(1) 768 number of data on each feature<br/>
+..(2) There is no NaN in entire data<br/>
+..(3) Datatype is int64 or float64<br/>
+
+================================================================================
 #### Visualize train data  
 1.. See probability distribution of each feature data<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_20%3A52%3A45.png" alt="drawing" width="1000" height="1000"/><br/>
