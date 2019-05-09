@@ -114,10 +114,6 @@ After<br/>
 
 5.. See paired scatter plot which is separated by labels (1 if glucose>120, 0 otherwise)<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_07%3A28%3A16.png" alt="drawing" width="1000" height="1000"/><br/>
-
-6.. See paired scatter plot with "estimated distribution via Kernel Density Estimation" + "separated distribution by labels (1 if glucose>120, 0 otherwise)"<br/>
-<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_07%3A48%3A47.png" alt="drawing" width="1000" height="1000"/><br/>
-
 ..(1) Meaning<br/>
 ....1) See Glucose-Insulin<br/>
 - Less Glucose results in less Insulin<br/>
@@ -129,6 +125,12 @@ After<br/>
 ....3) At least according this plotting, there is no strong correlation between all features and glucose level<br/>
 - It means low BMI can have high glucose, high BMI can have high glucose.<br/>
 - Low SkinThickness can have high glucose, high SkinThickness can have high glucose.<br/>
+
+6.. See paired scatter plot with "estimated distribution via Kernel Density Estimation" + "separated distribution by labels (1 if glucose>120, 0 otherwise)"<br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_07%3A48%3A47.png" alt="drawing" width="1000" height="1000"/><br/>
+
+7.. See paired scatter plot with "linear regression line which can explain distributional pattern of each 2 feature data"<br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_08%3A05%3A39.png" alt="drawing" width="1000" height="1000"/><br/>
 
 ================================================================================
 #### Analyze train data
