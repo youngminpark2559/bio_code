@@ -26,7 +26,7 @@
 ================================================================================
 #### Overview of entire dataset<br/>
 ```
-    Pregnancies     Glucose  BloodPressure  SkinThickness     Insulin  \
+       Pregnancies     Glucose  BloodPressure  SkinThickness     Insulin  \
 count  768.000000   768.000000  768.000000     768.000000     768.000000   
 mean   3.845052     120.894531  69.105469      20.536458      79.799479    
 std    3.369578     31.972618   19.355807      15.952218      115.244002   
@@ -36,7 +36,7 @@ min    0.000000     0.000000    0.000000       0.000000       0.000000
 75%    6.000000     140.250000  80.000000      32.000000      127.250000   
 max    17.000000    199.000000  122.000000     99.000000      846.000000   
 
-            BMI  DiabetesPedigreeFunction         Age     Outcome  
+              BMI  DiabetesPedigreeFunction         Age     Outcome  
 count  768.000000  768.000000                768.000000  768.000000  
 mean   31.992578   0.471876                  33.240885   0.348958    
 std    7.884160    0.331329                  11.760232   0.476951    
