@@ -67,6 +67,31 @@ Outcome                     768 non-null int64
 ..(3) Datatype is int64 or float64<br/>
 
 ================================================================================
+#### Preprocessing data
+1.. I add label data by using a criterion of glucose>120<br/>
+Before<br/>
+```
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  \
+0  6            148      72             35             0        33.6   
+1  1            85       66             29             0        26.6   
+
+   DiabetesPedigreeFunction  Age  Outcome  
+0  0.627                     50   1        
+1  0.351                     31   0        
+```
+
+After<br/>
+```
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  \
+0  6            148      72             35             0        33.6   
+1  1            85       66             29             0        26.6   
+
+   DiabetesPedigreeFunction  Age  Outcome  glucose_over_120  
+0  0.627                     50   1        1.0               
+1  0.351                     31   0        0.0               
+```
+
+================================================================================
 #### Visualize train data  
 1.. See probability distribution of each feature data<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_20%3A52%3A45.png" alt="drawing" width="1000" height="1000"/><br/>
@@ -79,6 +104,4 @@ Outcome                     768 non-null int64
 ..(1) Meaning: there are nagative and positive relationships between factors<br/>
 ....1) Negative correlation: Insulin-Pregnancies, SkinThickness-Pregnancies, Age-SkinThickness,<br/>
 ....2) Positive correlation: Age-Pregnancies, BMI-SkinThickness, Insluin-SkinThickness, Insulin-Glucose<br/>
-
-
 
