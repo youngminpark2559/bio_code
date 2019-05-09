@@ -107,8 +107,8 @@ After<br/>
 
 ================================================================================
 #### Analyze train data
-```
 1.. Conditional probability<br/>
+```
 # c nb_gt_120: number of sample which is greater than glucose 120
 nb_gt_120=np.sum(glucose_data>120)
 # print("nb_gt_120",nb_gt_120)
