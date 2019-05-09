@@ -93,13 +93,16 @@ After<br/>
 
 ================================================================================
 #### Visualize train data  
-1.. See probability distribution of each feature data<br/>
+1.. See the estimated probability distribution function of each feature data using mean and std<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_20%3A52%3A45.png" alt="drawing" width="1000" height="1000"/><br/>
 ..(1) Meaning: there are nagative and positive relationships between factors<br/>
 ....1) Large variance: Insulin, Glucose<br/>
 ....2) Small variance: Outcome, Pregnancies<br/><br/>
 
-2.. See correlations on features<br/>
+2.. See the actual probability distribution function by using histogram (bins=50)<br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_06%3A36%3A24.png" alt="drawing" width="1000" height="1000"/><br/>
+
+3.. See correlations on features<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_21%3A27%3A16.png" alt="drawing" width="1000" height="1000"/><br/>
 ..(1) Meaning: there are nagative and positive relationships between factors<br/>
 ....1) Negative correlation: Insulin-Pregnancies, SkinThickness-Pregnancies, Age-SkinThickness,<br/>
@@ -140,12 +143,11 @@ prob_val_of_BMI_gt_25=nb_gt_25_in_BMI/768
 
 ================================================================================
 #### To do
+1.. Plot entire data on the 2D plane to see how each feature gathers
+2.. See "weight of importance" to the diabetes phenomenon by using conditional probability
 
-1.. Plot entire data on the 2D plane to see how each feature gathers<br/>
-2.. See "weight of importance" to the diabetes phenomenon by using conditional probability<br/>
-- P(diabetes|age): when age prior is given, probability of diabetes occuring<br/>
-- P(diabetes|pregnancies): when pregnancies prior is given, probability of diabetes occuring<br/>
-- P(diabetes|BMI): when BMI prior is given, probability of diabetes occuring<br/>
-- ...<br/>
-
-3.. Inspect data in terms of Gaussian mixture model<br/>
+P(diabetes|age): when age prior is given, probability of diabetes occuring
+P(diabetes|pregnancies): when pregnancies prior is given, probability of diabetes occuring
+P(diabetes|BMI): when BMI prior is given, probability of diabetes occuring
+...
+3.. Inspect data in terms of Gaussian mixture model
