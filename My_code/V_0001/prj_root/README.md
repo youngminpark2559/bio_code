@@ -25,6 +25,7 @@
 ================================================================================
 #### Visualize train data  
 1.. See probability distribution of each feature data<br/>
-<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_20%3A38%3A42.png" alt="drawing" width="1000" height="1000"/><br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_20%3A52%3A45.png" alt="drawing" width="1000" height="1000"/><br/>
 ..(1) Meaning: there are nagative and positive relationships between factors.<br/>
-....1) 
+....1) Large variance: Insulin, Glucose
+....2) Small variance: Outcome, Pregnancies,
