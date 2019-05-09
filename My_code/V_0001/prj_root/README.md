@@ -105,3 +105,35 @@ After<br/>
 ....1) Negative correlation: Insulin-Pregnancies, SkinThickness-Pregnancies, Age-SkinThickness,<br/>
 ....2) Positive correlation: Age-Pregnancies, BMI-SkinThickness, Insluin-SkinThickness, Insulin-Glucose<br/>
 
+================================================================================
+#### Analyze train data
+```
+1.. Conditional probability<br/>
+# c nb_gt_120: number of sample which is greater than glucose 120
+nb_gt_120=np.sum(glucose_data>120)
+# print("nb_gt_120",nb_gt_120)
+# 349
+
+# c prob_val_of_glucose_gt_120: probability value of "glucose greater than 120" occuring
+prob_val_of_glucose_gt_120=nb_gt_120/768
+# print("prob_val_of_glucose_gt_120",prob_val_of_glucose_gt_120)
+# 0.45
+
+BMI_data=loaded_csv.iloc[:,5]
+# c nb_gt_25_in_BMI: number of samples which are greater than 25 in BMI
+nb_gt_25_in_BMI=np.sum(BMI_data>25.0)
+# print("nb_gt_25_in_BMI",nb_gt_25_in_BMI)
+# 645
+
+# c prob_val_of_BMI_gt_25: probability value of "BMI greater than 25" ocurring
+prob_val_of_BMI_gt_25=nb_gt_25_in_BMI/768
+# print("prob_val_of_BMI_gt_25",prob_val_of_BMI_gt_25)
+# 0.83984375
+
+# Conditional probability (when BMI>25 is given, probability of "glucose greater than 120" occuring)
+# P[B|A]=P[A \cap B] \times P[A]
+# P[nb_gt_25_in_BMI|prob_val_of_BMI_gt_25]=P[prob_val_of_BMI_gt_25 \cap nb_gt_25_in_BMI] * P[prob_val_of_BMI_gt_25]
+# P[nb_gt_25_in_BMI|prob_val_of_BMI_gt_25]=P[prob_val_of_BMI_gt_25 \cap nb_gt_25_in_BMI] * 0.83
+# P[nb_gt_25_in_BMI|prob_val_of_BMI_gt_25]=(0.45*0.83984375)*0.83
+# P[nb_gt_25_in_BMI|prob_val_of_BMI_gt_25]=0.313681640625
+```
