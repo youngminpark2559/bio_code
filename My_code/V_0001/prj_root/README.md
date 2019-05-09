@@ -95,7 +95,7 @@ After<br/>
 #### Visualize train data  
 1.. See the estimated probability distribution density function (PDF) of each feature data using 2 parameters; mean and variance<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_06%3A48%3A15.png" alt="drawing" width="1000" height="1000"/><br/>
-..(1) Goal of this estimation on PDF: to see variance distributions of each feature data<br/>
+..(1) Goal of this estimation for PDF: to see variance distributions of each feature data<br/>
 ..(2) Meaning: there are nagative and positive relationships between factors<br/>
 ....1) Large variance: Insulin, Glucose<br/>
 ....2) Small variance: Outcome, Pregnancies<br/><br/>
@@ -108,6 +108,24 @@ After<br/>
 ..(1) Meaning: there are nagative and positive relationships between factors<br/>
 ....1) Negative correlation: Insulin-Pregnancies, SkinThickness-Pregnancies, Age-SkinThickness,<br/>
 ....2) Positive correlation: Age-Pregnancies, BMI-SkinThickness, Insluin-SkinThickness, Insulin-Glucose<br/>
+
+4.. See paired scatter plot<br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_07%3A25%3A57.png" alt="drawing" width="1000" height="1000"/><br/>
+..(1) Meaning: there are nagative and positive relationships between factors<br/>
+....1) Negative correlation: Insulin-Pregnancies, SkinThickness-Pregnancies, Age-SkinThickness,<br/>
+....2) Positive correlation: Age-Pregnancies, BMI-SkinThickness, Insluin-SkinThickness, Insulin-Glucose<br/>
+
+4.. See paired scatter plot with labels<br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_07%3A28%3A16.png" alt="drawing" width="1000" height="1000"/><br/>
+..(1) Meaning<br/>
+....1) See Glucose-Insulin<br/>
+- Less Glucose results in less Insulin<br/>
+- Increase Glucose results in More Insulin<br/>
+....2) See BMI-Glucose<br/>
+- Even if low BMI, it can have high Glucose<br/>
+....3) At least according this plotting, there is no strong correlation between all features and glucose level<br/>
+- It means low BMI can have high glucose, high BMI can have high glucose.<br/>
+- Low SkinThickness can have high glucose, high SkinThickness can have high glucose.<br/>
 
 ================================================================================
 #### Analyze train data
