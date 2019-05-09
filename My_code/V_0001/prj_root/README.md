@@ -121,8 +121,10 @@ After<br/>
 ....1) See Glucose-Insulin<br/>
 - Less Glucose results in less Insulin<br/>
 - Increase Glucose results in More Insulin<br/>
+
 ....2) See BMI-Glucose<br/>
 - Even if low BMI, it can have high Glucose<br/>
+
 ....3) At least according this plotting, there is no strong correlation between all features and glucose level<br/>
 - It means low BMI can have high glucose, high BMI can have high glucose.<br/>
 - Low SkinThickness can have high glucose, high SkinThickness can have high glucose.<br/>
