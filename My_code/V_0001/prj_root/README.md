@@ -113,7 +113,18 @@ because mean of glucose is rather high (100 to 125)<br/>
 Normaly, it should have 80-100 range in glucose<br/>
 - And there are quite many ones which have high glucose (>125)<br/>
 
-....2) BloodPressure
+....3) BloodPressure<br/>
+- 0 blood pressure may be incorrectly measure data (outlier)<br/>
+- I'm not sure what blood pressure numerical figures represent<br/>
+- Just guess it could represent the diastolic blood pressure<br/>
+- Generally, blood pressure should be 120/80, +-10<br/>
+
+....4) SkinTickness<br/>
+- I'm not sure 0 can be meaningless outlier or not.<br/>
+- I just guess 0 skinthickness can exist by some medical diagnosis criterion.<br/>
+- And there are many samples which have 0 skinthinkness.<br/>
+- So, it's hard to simply consider those 0 values as outlier.<br/>
+
 
 
 3.. See correlations on features<br/>
