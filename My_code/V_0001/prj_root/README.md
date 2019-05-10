@@ -105,12 +105,14 @@ After<br/>
 ..(1) Meaning<br/>
 ....1) Pregnancies<br/>
 - It has most values between 0 to 5<br/>
+
 ....2) Glucosse<br/>
 - 0 glucose may be incorrectly measure value<br/>
 - You can predict this is data of people with potential or diagnosed diabetes <br/>
 because mean of glucose is rather high (100 to 125)<br/>
 Normaly, it should have 80-100 range in glucose<br/>
 - And there are quite many ones which have high glucose (>125)<br/>
+
 ....2) BloodPressure
 
 
