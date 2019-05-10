@@ -258,6 +258,11 @@ P_preg_each_interval 0.09
 cond_prob_of_high_glucose_when_preg_0to3_is_given 0.33
 ```
 
+3.. P(high_glucose|insulin_of_each_interval)<br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_14%3A06%3A37.png" alt="drawing" width="1000" height="1000"/><br/>
+Meaning:<br/>
+- According to 3rd plot, high insulin feature must result in high glucose? (high importance weight to diabetes phenomenon?)<br/>
+
 ================================================================================
 #### To do
 [V] 1.. Plot entire data on the 2D plane to see how each feature gathers<br/>
