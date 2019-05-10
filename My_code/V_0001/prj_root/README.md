@@ -257,13 +257,15 @@ P_high_glucose_AND_preg_each_interval 0.03
 P_preg_each_interval 0.09
 cond_prob_of_high_glucose_when_preg_0to3_is_given 0.33
 ```
-
 3.. P(high_glucose|insulin_of_each_interval)<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_14%3A06%3A37.png" alt="drawing" width="1000" height="300"/><br/>
 Meaning:<br/>
 - According to 1st plot, probability of "insulin" and "high glucose" occuring at the same time becomes lower as interval goes?<br/>
 - According to 2nd plot, probability of "insulin" at each interval becomes lower?<br/>
 - According to 3rd plot, high insulin feature must result in high glucose? (high importance weight to diabetes phenomenon?)<br/>
+
+4.. P(high_glucose|BMI_of_each_interval)<br/>
+<img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_14%3A49%3A11.png" alt="drawing" width="1000" height="300"/><br/>
 
 ================================================================================
 #### To do
