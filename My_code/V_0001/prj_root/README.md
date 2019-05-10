@@ -209,22 +209,58 @@ prob_val_of_BMI_gt_25=nb_gt_25_in_BMI/768
 
 1.. Pregnancies<br/>
 ..(1) Fomular: p(high_glucose|preg) = P(high_glucose \cap preg) / P(preg)<br/>
-..(2) when pregnancies of 0 to 3 is given, conditional probability value of diabetes (glucose>120)<br/>
+..(2) Result<br/>
 ```
-P_high_glucose_AND_preg_0to3=173/768
-# 0.22526041666666666
+interval information: [0,3]
+P_high_glucose_AND_preg_each_interval 0.23
+P_preg_each_interval 0.55
+cond_prob_of_high_glucose_when_preg_0to3_is_given 0.42
 
-P_preg_0to3=424/768
-# 0.5520833333333334
+interval information: [4,7]
+P_high_glucose_AND_preg_each_interval 0.15
+P_preg_each_interval 0.29
+cond_prob_of_high_glucose_when_preg_0to3_is_given 0.52
 
-cond_prob_of_high_glucose_when_preg_0to3_is_given=P_high_glucose_AND_preg_0to3/P_preg_0to3
-# 0.4
+interval information: [8,11]
+P_high_glucose_AND_preg_each_interval 0.08
+P_preg_each_interval 0.13
+cond_prob_of_high_glucose_when_preg_0to3_is_given 0.62
+
+interval information: [12,17]
+P_high_glucose_AND_preg_each_interval 0.02
+P_preg_each_interval 0.03
+cond_prob_of_high_glucose_when_preg_0to3_is_given 0.67
+```
+
+2.. P(high_glucose|blood_pressure_of_each_interval)<br/>
+..(1) Fomular: p(high_glucose|blood_pressure_of_each_interval) = P(high_glucose \cap blood_pressure_of_each_interval) / P(blood_pressure_of_each_interval)<br/>
+..(2) Result:<br/>
+```
+interval information: [0,38]
+P_high_glucose_AND_preg_each_interval 0.02
+P_preg_each_interval 0.05
+cond_prob_of_high_glucose_when_preg_0to3_is_given 0.4
+
+interval information: [40,48]
+P_high_glucose_AND_preg_each_interval 0.01
+P_preg_each_interval 0.02
+cond_prob_of_high_glucose_when_preg_0to3_is_given 0.5
+
+interval information: [50,55]
+P_high_glucose_AND_preg_each_interval 0.02
+P_preg_each_interval 0.05
+cond_prob_of_high_glucose_when_preg_0to3_is_given 0.4
+
+interval information: [56,61]
+P_high_glucose_AND_preg_each_interval 0.03
+P_preg_each_interval 0.09
+cond_prob_of_high_glucose_when_preg_0to3_is_given 0.33
 ```
 
 ================================================================================
 #### To do
 [V] 1.. Plot entire data on the 2D plane to see how each feature gathers<br/>
-[--] 2.. See "weight of importance" to the diabetes phenomenon by using conditional probability<br/>
+[V] 2.. See "weight of importance" to the diabetes phenomenon by using conditional probability<br/>
 
 - P(diabetes|age): when age prior is given, probability of diabetes occuring<br/>
 - P(diabetes|pregnancies): when pregnancies prior is given, probability of diabetes occuring<br/>
