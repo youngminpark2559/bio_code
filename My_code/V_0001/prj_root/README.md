@@ -142,8 +142,6 @@ Normaly, it should have 80-100 range in glucose<br/>
 - Binary feature (0 or 1)<br/>
 - Distribution of binary feature data can be modeled by Bernoulli distribution (which is special case of categerical distribution)<br/>
 
-
-
 3.. See correlations on features<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_21%3A27%3A16.png" alt="drawing" width="1000" height="1000"/><br/>
 ..(1) Meaning: there are nagative and positive relationships between factors<br/>
@@ -204,6 +202,23 @@ prob_val_of_BMI_gt_25=nb_gt_25_in_BMI/768
 # P[nb_gt_25_in_BMI|prob_val_of_BMI_gt_25]=P[prob_val_of_BMI_gt_25 \cap nb_gt_25_in_BMI] * 0.83
 # P[nb_gt_25_in_BMI|prob_val_of_BMI_gt_25]=(0.45*0.83984375)*0.83
 # P[nb_gt_25_in_BMI|prob_val_of_BMI_gt_25]=0.313681640625
+```
+
+================================================================================
+#### Importance weights of each feature to diabetes (high glucose>120) by using conditional probability values
+
+1.. Pregnancies<br/>
+..(1) Fomular: p(high_glucose|preg) = P(high_glucose \cap preg) / P(preg)<br/>
+..(2) when pregnancies of 0 to 3 is given, conditional probability value of diabetes (glucose>120)<br/>
+```
+P_high_glucose_AND_preg_0to3=173/768
+# 0.22526041666666666
+
+P_preg_0to3=424/768
+# 0.5520833333333334
+
+cond_prob_of_high_glucose_when_preg_0to3_is_given=P_high_glucose_AND_preg_0to3/P_preg_0to3
+# 0.4
 ```
 
 ================================================================================
