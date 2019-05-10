@@ -169,6 +169,7 @@ Normaly, it should have 80-100 range in glucose<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_07%3A48%3A47.png" alt="drawing" width="1000" height="1000"/><br/>
 
 7.. See paired scatter plot with "linear regression line which can explain distributional pattern of each 2 feature data"<br/>
+Even if I tried this, it looks like this is meaningless<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_08%3A05%3A39.png" alt="drawing" width="1000" height="1000"/><br/>
 
 ================================================================================
