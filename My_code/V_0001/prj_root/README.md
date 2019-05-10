@@ -125,6 +125,23 @@ Normaly, it should have 80-100 range in glucose<br/>
 - And there are many samples which have 0 skinthinkness.<br/>
 - So, it's hard to simply consider those 0 values as outlier.<br/>
 
+....5) Insulin<br/>
+- There are data which has 0 value<br/>
+- I'm not sure 0 can be meaningless outlier or not just like "4) SkinTickness" case<br/>
+
+....6) BMI<br/>
+- It seems like distribution of BMI data follows Gaussian normal distribution<br/>
+- And it makes sense in that noraml natural phenomenon generally follows this Gaussian normal distribution<br/>
+
+....7) DiabetesPedigreeFunction<br/>
+
+....8) Age<br/>
+- This data is originated from young people (20 to 40)<br/>
+
+....9) Outcome<br/>
+- Binary feature (0 or 1)<br/>
+- Distribution of binary feature data can be modeled by Bernoulli distribution (which is special case of categerical distribution)<br/>
+
 
 
 3.. See correlations on features<br/>
