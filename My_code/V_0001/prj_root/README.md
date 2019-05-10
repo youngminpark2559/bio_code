@@ -102,6 +102,17 @@ After<br/>
 
 2.. See the actual probability distribution function by using histogram (bins=50)<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_10_06%3A36%3A24.png" alt="drawing" width="1000" height="1000"/><br/>
+..(1) Meaning<br/>
+....1) Pregnancies<br/>
+- It has most values between 0 to 5<br/>
+....2) Glucosse<br/>
+- 0 glucose may be incorrectly measure value<br/>
+- You can predict this is data of people with potential or diagnosed diabetes <br/>
+because mean of glucose is rather high (100 to 125)<br/>
+Normaly, it should have 80-100 range in glucose<br/>
+- And there are quite many ones which have high glucose (>125)<br/>
+....2) BloodPressure
+
 
 3.. See correlations on features<br/>
 <img src="https://raw.githubusercontent.com/youngminpark2559/bio_code/master/My_code/V_0001/prj_root/img_out/Analyze_train_data/2019_05_09_21%3A27%3A16.png" alt="drawing" width="1000" height="1000"/><br/>
